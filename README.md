@@ -1,2 +1,2 @@
 # Shivanshu
-This is my repositi
+This is my repository
