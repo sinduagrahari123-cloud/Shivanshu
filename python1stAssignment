@@ -1,0 +1,458 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM6X+x9dgV/9sBwD0Xr+cPK",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sinduagrahari123-cloud/Shivanshu/blob/main/python1stAssignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2wAxLbs6HxCx",
+        "outputId": "4e1dbc88-071c-4b4b-8da3-c2f3b2a79633"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "11"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ],
+      "source": [
+        "#Q.1\n",
+        "\n",
+        "#this program prints \"Hello World!\" to the console.\n",
+        "import sys\n",
+        "sys.stdout.write(\"Hello World\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.2\n",
+        "\n",
+        "a=[]\n",
+        "b=int(input(\"enter no. of element in the list\"))\n",
+        "s=0\n",
+        "\n",
+        "for i in range(b):\n",
+        "    c=int(input(\"Enter the elements\"))\n",
+        "    a.append(c)\n",
+        "for j in a:\n",
+        "    s=s+j\n",
+        "average= s/b\n",
+        "print(\"average of the list is\",average)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1JIcMguGK4D1",
+        "outputId": "56e10a58-eca4-43cf-f538-4593a643f502"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter no. of element in the list5\n",
+            "Enter the elements76\n",
+            "Enter the elements56\n",
+            "Enter the elements55\n",
+            "Enter the elements55\n",
+            "Enter the elements74\n",
+            "average of the list is 63.2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.3\n",
+        "\n",
+        "a= int(input(\"Enter the number upto which you want fibbonacci series\"))\n",
+        "\n",
+        "s=[0,1]\n",
+        "for i in range(a):\n",
+        "  if i==0 or i==1:\n",
+        "    continue\n",
+        "  else:\n",
+        "    s.append(s[i-2]+s[i-1])\n",
+        "print(s)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XKf6nQFkNdcr",
+        "outputId": "4b85327d-697b-4fad-8cf9-4c6d8baa2738"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the number upto which you want fibbonacci series12\n",
+            "[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.4\n",
+        "N= int(input(\"Enter the no. upto which you want\"))\n",
+        "for i in range(N):\n",
+        "  a=i+1\n",
+        "  if a%3==0 and a%5==0:\n",
+        "    print(\"FizzBuzz\")\n",
+        "  elif a%3==0:\n",
+        "    print(\"Fizz\")\n",
+        "  elif a%5==0:\n",
+        "    print(\"Buzz\")\n",
+        "  else:\n",
+        "    print(a)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IZEpfZocP4nt",
+        "outputId": "91641cee-ddf0-4758-fbb9-b34e4f65f38a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the no. upto which you want16\n",
+            "1\n",
+            "2\n",
+            "Fizz\n",
+            "4\n",
+            "Buzz\n",
+            "Fizz\n",
+            "7\n",
+            "8\n",
+            "Fizz\n",
+            "Buzz\n",
+            "11\n",
+            "Fizz\n",
+            "13\n",
+            "14\n",
+            "FizzBuzz\n",
+            "16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "7u3C3r7yRoe2"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.5\n",
+        "l=eval(input(\"Enter the list\"))\n",
+        "n=len(l)\n",
+        "n=int(n)\n",
+        "l.sort()\n",
+        "\n",
+        "if n%2==0:\n",
+        "  s= (n//2)\n",
+        "  median = (l[s-1]+l[s])/2\n",
+        "else:\n",
+        "  s= (n+1)//2\n",
+        "  median =l[s-1]\n",
+        "x=[]\n",
+        "for j in l:\n",
+        "  a= l.count(j)\n",
+        "  x.append(a)\n",
+        "q=max(x)\n",
+        "\n",
+        "mode= l[(x.index(q))]\n",
+        "\n",
+        "# Sorry I can't do Multiple modes handling\n",
+        "t=0\n",
+        "for k in l:\n",
+        "    t=s+k\n",
+        "mean= t/n\n",
+        "if n==0:\n",
+        "  print(\"No elements in the list\")\n",
+        "else:\n",
+        "  print(\"Mean is\",mean)\n",
+        "  print(\"Median is\",median)\n",
+        "  print(\"Mode is\",mode)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "60Q5osF-rtds",
+        "outputId": "c0d4cb2b-51a7-469a-c8cb-ed3e78e1cb20"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the list[8,8,8,8,7,7,7,7,6,5,4,3,2,1]\n",
+            "Mean is 1.0714285714285714\n",
+            "Median is 7.0\n",
+            "Mode is 7\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.6\n",
+        "a=eval(input(\"Enter the list\"))\n",
+        "b=len(a)\n",
+        "s=0\n",
+        "d=0\n",
+        "\n",
+        "\n",
+        "for j in a:\n",
+        "    s=s+j\n",
+        "mean= s/b\n",
+        "\n",
+        "for k in a:\n",
+        "  d=d+((mean-k)**2)\n",
+        "\n",
+        "sd=(d/b)**0.5\n",
+        "print(\"standard deviation is\",sd)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "TyhRZnufAlIi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.7\n",
+        "A=[]\n",
+        "B=[]\n",
+        "C=[]\n",
+        "\n",
+        "r=int(input(\"Enter the no. of rows\"))\n",
+        "c=int(input(\"Enter the no. of columns\"))\n",
+        "if r==c:\n",
+        "  print(\"Enter the elements of first matrix\")\n",
+        "  for i in range(r):\n",
+        "    A.append([])\n",
+        "    for j in range(c):\n",
+        "      x=int(input(\"Enter the element of row\"))\n",
+        "      A[i].append(x)\n",
+        "  print(\"Enter the elements of second matrix\")\n",
+        "  for k in range(r):\n",
+        "    B.append([])\n",
+        "    for l in range(c):\n",
+        "      y=int(input(\"Enter the element of row\"))\n",
+        "      B[k].append(y)\n",
+        "  for m in range(r):\n",
+        "    C.append([])\n",
+        "    for n in range(c):\n",
+        "      p=A[m][n]+B[m][n]\n",
+        "      C[m].append(p)\n",
+        "  for q in C:\n",
+        "    print(q)\n",
+        "else:\n",
+        "  print(\"Rows and columns should be equal\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1fDuBgXKBoHj",
+        "outputId": "d477ccd2-b0cc-4c53-b695-7f9272963367"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the no. of rows2\n",
+            "Enter the no. of columns2\n",
+            "Enter the elements of first matrix\n",
+            "Enter the element of row4\n",
+            "Enter the element of row5\n",
+            "Enter the element of row4\n",
+            "Enter the element of row5\n",
+            "Enter the elements of second matrix\n",
+            "Enter the element of row5\n",
+            "Enter the element of row4\n",
+            "Enter the element of row5\n",
+            "Enter the element of row4\n",
+            "[9, 9]\n",
+            "[9, 9]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.8\n",
+        "a=eval(input(\"Enter the list of actuall values\"))\n",
+        "b=eval(input(\"Enter the list of predicted values\"))\n",
+        "\n",
+        "c=len(a)\n",
+        "d=len(b)\n",
+        "if c==d:\n",
+        "  s=0\n",
+        "  e=0\n",
+        "  for i in range(c):\n",
+        "    d=(a[i]-b[i])\n",
+        "    if d<0:\n",
+        "      d=d*(-1)\n",
+        "    s=s+d\n",
+        "  MAE=s/c\n",
+        "  for j in range(c):\n",
+        "    e=e+((a[j]-b[j])**2)\n",
+        "  MSE=e/c\n",
+        "  print(\"MAE is\",MAE)\n",
+        "  print(\"MSE is\",MSE)\n",
+        "else:\n",
+        "  print(\"Both the lists should be equal\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "R49KB89vNFQ9",
+        "outputId": "11bf0947-da52-498c-8377-72352ecf9c38"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the list of actuall values[7,8]\n",
+            "Enter the list of predicted values[12,6]\n",
+            "MAE is 3.5\n",
+            "MSE is 14.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Q.9\n",
+        "#only for 3x3 and 4x4\n",
+        "\n",
+        "a=eval(input(\"Enter the matrix\"))\n",
+        "r=len(a)\n",
+        "c=len(a[0])\n",
+        "\n",
+        "if r==c:\n",
+        "  if r==3:\n",
+        "    k=(a[0][0])*((a[1][1])-a[2][2])\n",
+        "    l=(a[0][1])*((a[1][0])-a[2][0])\n",
+        "    m=(a[0][2])*((a[1][0])-a[2][0])\n",
+        "    z=(k-l+m)\n",
+        "    print(\"The result is \",z)\n",
+        "  if r==2:\n",
+        "    k=a[0][0]*a[1][1]\n",
+        "    l=a[0][1]*a[1][0]\n",
+        "    z=(k-l)\n",
+        "    print(\"The result is \",z)\n",
+        "else:\n",
+        "   print(\"only for 3x3 and 4x4\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WA6nrREnWzxM",
+        "outputId": "61c0d04b-c051-4c95-a0bb-f2e194fd5999"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the matrix[[5,6],[8,9]]\n",
+            "The result is  -3\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
